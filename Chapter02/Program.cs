@@ -5,12 +5,14 @@
         static void Main()
         {
             Console.WriteLine("Hello");
-            PriceChecker();
+
+            BuySell.PriceChecker();
         }
-    
+    }
 
-
-        private static void PriceChecker()
+    public class BuySell()
+    {
+        public static void PriceChecker()
         {
             double price = 0;
             string response = price == 0 ? "Sell" : "Buy";
