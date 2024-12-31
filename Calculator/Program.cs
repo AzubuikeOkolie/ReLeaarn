@@ -49,4 +49,17 @@
             return num1 | num2;
         }
     }
+
+    public interface ICalculat0r
+    {
+        double Add(int num1, int num2);
+    }
+
+    public class Waka : ICalculat0r
+    {
+        public double Add(int num1, int num2)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
