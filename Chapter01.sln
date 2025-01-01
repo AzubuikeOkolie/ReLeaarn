@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollGenerics", "CollGenerics\CollGenerics.csproj", "{3BDD8376-7182-49E3-A43A-595D9CBA34AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTut", "LinqTut\LinqTut.csproj", "{222F303A-472B-4797-B21B-B42DAFE756E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3BDD8376-7182-49E3-A43A-595D9CBA34AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BDD8376-7182-49E3-A43A-595D9CBA34AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BDD8376-7182-49E3-A43A-595D9CBA34AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222F303A-472B-4797-B21B-B42DAFE756E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222F303A-472B-4797-B21B-B42DAFE756E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222F303A-472B-4797-B21B-B42DAFE756E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222F303A-472B-4797-B21B-B42DAFE756E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
