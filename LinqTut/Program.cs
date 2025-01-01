@@ -28,7 +28,11 @@ public class Program
              new Order { CustomerId = 30, Description = "Sneakers" }
         };
 
-        foreach (Order order in orders) 
+        IEnumerable<Order> orders1 = from ord in orders 
+                                    // where ord.CustomerId == 20
+                                     select ord;
+
+        foreach (Order order in orders1)
         {
             Console.WriteLine($"Orders in list are {order.CustomerId} : {order.Description} ");
         }
@@ -36,11 +40,15 @@ public class Program
         List<Customer> customers1 = new()
         {
             new Customer {Id = 1, Name = " Azubuike Okolie Kevin"},
-            new Customer {Id = 2, Name = " Ijeoma Okolie Pearl"},
+            new Customer {Id = 2, Name = "Ijeoma Okolie Pearl"},
             new Customer {Id = 3, Name = " David Okolie Chukwunonso"}
         };
 
-        foreach(Customer cus1 in customers1)
+        IQueryable<Customer> customers2 = customers1.AsQueryable()
+                                                    .Where(n => n.Id == 1);
+
+
+        foreach (Customer cus1 in customers2)
         {
             Console.WriteLine(cus1.Id + cus1.Name);
         }
