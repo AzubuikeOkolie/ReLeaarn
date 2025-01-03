@@ -28,8 +28,8 @@ public class Program
              new Order { CustomerId = 30, Description = "Sneakers" }
         };
 
-        IEnumerable<Order> orders1 = from ord in orders 
-                                    // where ord.CustomerId == 20
+        IEnumerable<Order> orders1 = from ord in orders
+                                         // where ord.CustomerId == 20
                                      select ord;
 
         foreach (Order order in orders1)
@@ -52,5 +52,25 @@ public class Program
         {
             Console.WriteLine(cus1.Id + cus1.Name);
         }
+
+        var currentYear = DateTime.Now.Year;
+
+        var publicHolidays = new List<DateTime>()
+        {
+            new (currentYear, 1, 3),
+            new (currentYear, 3, 8),
+            new (currentYear, 4, 2),
+            new (currentYear, 4, 5),
+            new (currentYear, 5, 1),
+            new (currentYear, 5, 3),
+            new (currentYear, 6, 7),
+            new (currentYear, 10, 1),
+            new (currentYear, 12, 25),
+            new (currentYear, 12, 26)
+        };
+
+        var isPublicHoliday = publicHolidays.Contains(DateTime.Now.Date);
+
+        Console.WriteLine(isPublicHoliday);
     }
 }
